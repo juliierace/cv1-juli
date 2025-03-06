@@ -1,0 +1,228 @@
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 50px; /* espacio para el header */
+}
+
+/* Contenedor general de las imágenes */
+.image-container {
+    display: flex;                /* Usamos flexbox para organizar las imágenes */
+    flex-wrap: wrap;              /* Las imágenes se envolverán en varias filas si es necesario */
+    gap: 20px;                    /* Espacio entre las imágenes */
+    justify-content: center;      /* Centra las imágenes horizontalmente */
+    margin: 40px 0;               /* Margen superior e inferior */
+}
+
+/* Estilo de cada imagen individual */
+.image-container div {
+    width: 350px;                 /* Ancho fijo para cada imagen */
+    height: 500px;                /* Altura fija para todas las imágenes */
+    overflow: hidden;             /* Asegura que las imágenes no se desborden */
+    border-radius: 10px;          /* Bordes redondeados */
+}
+
+/* Las imágenes dentro del div */
+.image-container img {
+    width: 100%;                  /* Ocupa el 100% del espacio disponible */
+    height: 100%;                 /* Ocupa el 100% del espacio disponible */
+    object-fit: cover;            /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    transition: transform 0.3s ease-in-out;  /* Transición suave al hacer hover */
+}
+
+/* Efecto hover para las imágenes */
+.image-container img:hover {
+    transform: scale(1.05);       /* Aumenta ligeramente el tamaño de la imagen */
+    cursor: pointer;              /* Cambia el cursor al pasar sobre la imagen */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.nombre {
+    text-align: center;          /* Centra el texto horizontalmente */
+    font-size: 2rem;             /* Tamaño grande para hacerlo destacado */
+    font-weight: 700;            /* Poner el texto en negrita (usando el peso 700 de Montserrat) */
+    color: #333;                 /* Color oscuro para darle seriedad */
+    text-transform: uppercase;   /* Convierte todo el texto a mayúsculas */
+    letter-spacing: 2px;         /* Espaciado entre letras para darle más estilo */
+    margin-top: 50px;            /* Margen superior para que no esté pegado al borde */
+    margin-bottom: 20px;         /* Un poco de espacio debajo */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+.video-container {
+    display: flex;                  /* Usa flexbox para organizar los videos en fila */
+    justify-content: center;        /* Centra los videos en el contenedor */
+    flex-wrap: wrap;                 /* Permite que los videos se acomoden en varias filas si es necesario */
+    gap: 20px;                       /* Espacio entre los videos */
+    margin-top: 30px;                /* Espacio superior */
+}
+
+.video-item {
+    width: 100%;                     /* El ancho será el 100% del contenedor padre */
+    max-width: 400px;                /* Limita el ancho máximo de cada video */
+    text-align: center;              /* Centra los videos dentro del div */
+    overflow: hidden;                /* Asegura que el contenido no se desborde */
+    border-radius: 15px;             /* Bordes redondeados */
+    padding: 20px;                   /* Agrega algo de espacio dentro del contenedor */
+    box-sizing: border-box;          /* Incluye padding dentro del ancho total */
+    transition: transform 0.3s ease; /* Suaviza la transición de escalado */
+}
+
+.video-item:hover {
+    transform: scale(1.05);          /* Escala el video un 5% al pasar el cursor */
+}
+
+video {
+    width: 90%;                      /* El video ocupará el 90% del ancho de su contenedor */
+    height: auto;                    /* Mantiene la proporción original */
+    border-radius: 15px;             /* Bordes redondeados en el video */
+}
+
+.caption {
+    font-size: 1rem;                 /* Tamaño de fuente pequeño */
+    margin-top: 10px;                 /* Espacio entre el video y la descripción */
+    font-weight: bold;               /* Descripción en negrita */
+    color: #333;                     /* Color oscuro */
+}
+
+
+
+/* Estilo general para las secciones */
+section {
+    padding: 40px 20px;           /* Espaciado interno en todas las secciones */
+    margin-bottom: 30px;          /* Separación entre secciones */
+    background-color: #f4f4f4;    /* Color de fondo suave */
+    border-radius: 15px;          /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la sección de Presentación */
+#Presentación {
+    background-color: #ffffff;    /* Fondo blanco para la presentación */
+    color: #333333;               /* Texto oscuro para buena legibilidad */
+}
+
+#Presentación h2 {
+    font-size: 2rem;              /* Tamaño de fuente para el título */
+    margin-bottom: 15px;           /* Espacio debajo del título */
+    font-family: 'Montserrat', sans-serif; /* Mantener la fuente profesional */
+}
+
+#Presentación h3 {
+    font-size: 1.2rem;             /* Texto descriptivo más pequeño */
+    line-height: 1.6;              /* Mayor interlineado para comodidad de lectura */
+    color: #666666;                /* Color de texto suave */
+}
+
+/* Estilo para la sección de Repertorio */
+#Repertorio {
+    background-color: #ffffff;    /* Fondo blanco para repertorio */
+}
+
+#Repertorio h2 {
+    font-size: 2rem;              /* Tamaño de fuente para el título */
+    margin-bottom: 15px;           /* Espacio debajo del título */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Repertorio h3 {
+    font-size: 1.2rem;             /* Texto descriptivo más pequeño */
+    line-height: 1.6;              /* Mayor interlineado para comodidad de lectura */
+    color: #666666;
+}
+
+/* Estilo para la sección de Redes */
+#Redes {
+    background-color: #ffffff;    /* Fondo blanco para redes */
+}
+
+#Redes h2 {
+    font-size: 2rem;              /* Tamaño de fuente para el título */
+    margin-bottom: 15px;           /* Espacio debajo del título */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Redes h3 {
+    font-size: 1.2rem;             /* Texto descriptivo más pequeño */
+    line-height: 1.6;              /* Mayor interlineado para comodidad de lectura */
+    color: #666666;
+}
+
+#Redes a {
+    color: #0077cc;                /* Enlaces de color azul */
+    text-decoration: none;         /* Sin subrayado */
+    font-weight: bold;             /* Enlaces en negrita */
+}
+
+#Redes a:hover {
+    text-decoration: underline;    /* Subrayado al pasar el cursor */
+}
+
+/* Estilo para la sección de Contacto */
+#Contacto {
+    background-color: #ffffff;    /* Fondo blanco para contacto */
+}
+
+#Contacto h2 {
+    font-size: 2rem;              /* Tamaño de fuente para el título */
+    margin-bottom: 15px;           /* Espacio debajo del título */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Contacto h3 {
+    font-size: 1.2rem;             /* Texto descriptivo más pequeño */
+    line-height: 1.6;              /* Mayor interlineado para comodidad de lectura */
+    color: #666666;
+}
+
+
